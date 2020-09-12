@@ -1,0 +1,36 @@
+ls
+#Excercise 2.1
+
+42 = n
+
+x = y = 1
+
+pi = 3.14597;
+
+r = 5
+
+areacircle = pi*r**2.
+
+xy
+
+#2.2
+
+(4/3)*pi*r**3
+
+coverprice = 24.95
+
+discount = 40/100
+
+s1 = 3.00
+s2 = .75
+
+coverprice - discount*coverprice = base
+
+(base + s1) + 59*(base + s2)
+
+easy = 8*60 + 15
+tempo = 7*60 +12
+
+easy*2 + tempo*3 / 60
+
+#fractional remainder x 60 to get mins
