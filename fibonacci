@@ -1,0 +1,11 @@
+
+def fibonaci(n):
+  if n == 0
+    return 0
+  elif n == 1 
+    return 1 
+  else:
+    return (fibonaci(n-1) + fibonaci(n-2))
+    
+    #maybe make a list of fibonacci numbers then use that to multiply by the base length value for the radius? 
+
