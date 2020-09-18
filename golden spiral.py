@@ -72,21 +72,21 @@ def fibonacci(n):
 
 
 
-fibo_nr = [1,1,2,3, 5, 8, 13, 21, 34,55]  
+fibo_nr = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]  
 
-def draw_square(side_length):  #Function for drawing a square
+def draw_square(t, length):  #Function for drawing a square
     for i in range(4):
-        forward(side_length)
+        forward(length)
         right(90)
 
-nr_squares=len(fibo_nr)
+nr_squares=len(fibo_nr)  # I think this is just the total number of fib nums in the list (10 for our cases) 
 
-factor = 3                        #Enlargement factor
+factor = 3                        #Enlargement factor  {{Re do all this so that the circle prints the proper direction. can guess and check to see which side is best to start 
 penup()
-goto(50,50)                  #Move starting point right and up
+goto(50,50)                  #Move starting point right and up {{ Ok but why is the neccessary????)) 
 pendown()
 for i in range(nr_squares):
-    draw_square(factor*fibo_nr[i]) #Draw square
+    draw_square(t, factor*fibo_nr[i]) #Draw square
     penup()                        #Move to new corner as starting point
     forward(factor*fibo_nr[i])
     right(90)
@@ -96,10 +96,10 @@ for i in range(nr_squares):
 penup()
 goto(50,50)       #Move to starting point
 setheading(0)   #Face the turtle to the right
-pencolor('red')
+pencolor('blue')
 pensize(3)
 pendown()
 #Draw quartercircles with fibonacci numbers as radius
 for i in range(nr_squares):
-    circle(-factor*fibo_nr[i],90)  # minus sign to draw clockwise
+    arc(t, -factor*fibo_nr[i],90)  # minus sign to draw clockwise
 
