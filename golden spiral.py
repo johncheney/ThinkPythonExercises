@@ -52,5 +52,22 @@ def fib(t, r, angle):
     polyline(t, n, step_length, step_angle)
     t.rt(step_angle/2)
 
+  
+def fibonacci(n):
+    if n == 0
+        return 0
+    elif n == 1
+        return 1
+    else:
+        return(fibonacci(n-1)+fibonacci(n-2)
+        
+#paste all that other information in the program from polygon
 
+#code plan: make a list of fib numbers 
+# use those as a multiplying factor in drawing the 90 angles by 
+# focusing on them as a radial multiplyer 
+
+
+
+def golden＿spiral(t, length):
 
