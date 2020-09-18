@@ -61,13 +61,45 @@ def fibonacci(n):
     else:
         return(fibonacci(n-1)+fibonacci(n-2)
         
-#paste all that other information in the program from polygon
 
 #code plan: make a list of fib numbers 
 # use those as a multiplying factor in drawing the 90 angles by 
 # focusing on them as a radial multiplyer 
+# see the How to draw spirals using python in the readme file of this code for some help
+
+
+#Draw the Fibonacci Spiral using Turtle Graphics
 
 
 
-def golden＿spiral(t, length):
+fibo_nr = [1,1,2,3, 5, 8, 13, 21, 34,55]  
+
+def draw_square(side_length):  #Function for drawing a square
+    for i in range(4):
+        forward(side_length)
+        right(90)
+
+nr_squares=len(fibo_nr)
+
+factor = 3                        #Enlargement factor
+penup()
+goto(50,50)                  #Move starting point right and up
+pendown()
+for i in range(nr_squares):
+    draw_square(factor*fibo_nr[i]) #Draw square
+    penup()                        #Move to new corner as starting point
+    forward(factor*fibo_nr[i])
+    right(90)
+    forward(factor*fibo_nr[i])
+    pendown()
+        
+penup()
+goto(50,50)       #Move to starting point
+setheading(0)   #Face the turtle to the right
+pencolor('red')
+pensize(3)
+pendown()
+#Draw quartercircles with fibonacci numbers as radius
+for i in range(nr_squares):
+    circle(-factor*fibo_nr[i],90)  # minus sign to draw clockwise
 
