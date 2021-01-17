@@ -14,11 +14,15 @@ def epochconverter(n):
     minutes = n / 60 
     hours = minutes / 60
     days = hours / 24
-    years = days / 365.25 
-    print(years) 
-
+    weeks = days / 7
+    months = weeks / 4
+    years = days / 365.25
+    print(years, days)
 
 epochconverter(time.time())
+
+
+
 
 
 
